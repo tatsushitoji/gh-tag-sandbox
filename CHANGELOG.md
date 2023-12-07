@@ -1,3 +1,7 @@
+## [0.0.5](https://github.com/tatsushitoji/gh-tag-sandbox/compare/v0.0.2...v0.0.5) (2023-12-07)
+
+
+
 ## [0.0.4](https://github.com/tatsushitoji/gh-tag-sandbox/compare/v0.0.2...v0.0.4) (2023-12-07)
 
 
