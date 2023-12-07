@@ -1,0 +1,14 @@
+name: Inspection
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - v*
+
+jobs:
+  inspection:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo '1' $GITHUB_REF
