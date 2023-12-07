@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "release:prepare": "shipjs prepare",
+    "release:prepare": "shipjs prepare -y",
     "release:trigger": "shipjs trigger"
   },
   "author": "",
