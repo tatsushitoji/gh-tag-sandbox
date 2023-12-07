@@ -1,0 +1,15 @@
+{
+  "name": "gh-tag-sandbox",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "release:prepare": "shipjs prepare",
+    "release:trigger": "shipjs trigger"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "shipjs": "0.26.3"
+  }
+}
