@@ -2,9 +2,10 @@ name: Inspection
 
 on:
   workflow_dispatch:
-  push:
-    tags:
-      - v**
+  workflow_run:
+    workflows: [Trigger shipjs]
+    types:
+      - completed
 
 jobs:
   inspection:
