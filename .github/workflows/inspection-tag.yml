@@ -4,11 +4,12 @@ on:
   workflow_dispatch:
   push:
     tags:
-      - v*
+      - v**
 
 jobs:
   inspection:
     runs-on: ubuntu-latest
     steps:
       - run: |
+          echo '1' $GITHUB_REF
           echo '1' $GITHUB_REF
