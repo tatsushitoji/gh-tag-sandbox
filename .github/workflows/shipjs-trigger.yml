@@ -1,8 +1,9 @@
 name: Trigger shipjs
 on:
   pull_request:
-    types:
-      - closed
+    branches:
+      - master
+    types: [closed]
 
 jobs:
   build:
