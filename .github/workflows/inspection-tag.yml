@@ -11,6 +11,11 @@ jobs:
   inspection:
     runs-on: ubuntu-latest
     steps:
+      - name: Check event type
+        if: github.event_name == 'workflow_dispatch' || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
+        run: |
+          echo "This is a workflow_dispatch event or workflow run conclusion is success"
       - run: |
           echo '1' $GITHUB_REF
           echo '2' ${{ github.event.workflow_run.conclusion }}
+          echo '3' ${{ github.event_name }}
